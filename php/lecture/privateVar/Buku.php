@@ -22,7 +22,7 @@ class Buku{
     }
 
     function getPengarang(){
-        return $this->judul;
+        return $this->pengarang;
     }
 }
 ?>
