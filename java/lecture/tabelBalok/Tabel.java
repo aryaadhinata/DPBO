@@ -47,7 +47,7 @@ public class Tabel {
         for (int i = 0; i < baris; i++) {
             for (int j = 0; j < kolom; j++) {
                 if (index < isi.length) {
-                    System.out.print(isi[index] + "\t");
+                    System.out.print("|" + isi[index] + "\t" + "|");
                     index++;
                 }
             }

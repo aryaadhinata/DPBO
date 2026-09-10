@@ -2,35 +2,36 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int n = 0;
+        System.out.print("Masukkan jumlah balok: ");
         Scanner scanner = new Scanner(System.in);
+        try {
+            n = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("Input harus berupa angka!");
+            return;
+        }
+        
+        Balok[] balokArray = new Balok[n];
 
-        // Input untuk Tabel
-        System.out.print("Masukkan jumlah baris tabel: ");
-        int baris = scanner.nextInt();
-        System.out.print("Masukkan jumlah kolom tabel: ");
-        int kolom = scanner.nextInt();
-
-        Tabel tabel = new Tabel(baris, kolom);
-        String[] isiTabel = new String[baris * kolom];
-
-        System.out.println("Masukkan isi tabel:");
-        for (int i = 0; i < isiTabel.length; i++) {
-            System.out.print("Isi sel " + (i + 1) + ": ");
-            isiTabel[i] = scanner.next();
+        int i = 0, p = 0, l = 0, t = 0;
+        for (i = 0; i < n; i++) {
+            System.out.print("Masukkan panjang, lebar, dan tinggi balok ke-" + (i + 1) + ": \n");
+            p = scanner.nextInt();
+            l = scanner.nextInt();
+            t = scanner.nextInt();
+            balokArray[i] = new Balok(p, l, t);
         }
 
-        System.out.println("\nIsi Tabel:");
-        tabel.cetakTabel(isiTabel);
-
-        // Input untuk Balok
-        System.out.print("\nMasukkan panjang balok: ");
-        int panjang = scanner.nextInt();
-        System.out.print("Masukkan lebar balok: ");
-        int lebar = scanner.nextInt();
-        System.out.print("Masukkan tinggi balok: ");
-        int tinggi = scanner.nextInt();
-
-        Balok balok = new Balok(panjang, lebar, tinggi);
-        System.out.println("Volume Balok: " + balok.getVolume());
+        Tabel tab = new Tabel(n, 5);
+        for (i = 0; i < n; i++) {
+            String[] data = new String[5];
+            data[0] = "" + balokArray[i].getPanjang();
+            data[1] = "" + balokArray[i].getLebar();
+            data[2] = "" + balokArray[i].getTinggi();
+            data[3] = "" + balokArray[i].getVolume();
+            data[4] = "" + balokArray[i].getLuasPermukaan();
+            tab.cetakTabel(data);
+        }
     }
 }
