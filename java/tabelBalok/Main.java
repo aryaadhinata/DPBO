@@ -9,6 +9,7 @@ public class Main {
             n = scanner.nextInt();
         } catch (Exception e) {
             System.out.println("Input harus berupa angka!");
+            scanner.close();
             return;
         }
         
@@ -33,5 +34,6 @@ public class Main {
             data[4] = "" + balokArray[i].getLuasPermukaan();
             tab.cetakTabel(data);
         }
+        scanner.close();
     }
 }

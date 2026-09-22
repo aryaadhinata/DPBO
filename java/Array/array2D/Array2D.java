@@ -13,5 +13,7 @@ public class Array2D{
                 System.out.println(arr[i][j]);
             }
         }
+
+        scan.close();
     }
 }

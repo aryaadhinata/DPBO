@@ -26,6 +26,7 @@ class Main {
             y = sc.nextInt();
         }catch(Exception e){
         }
+        sc.close();
 
         switch(menu){
             case 1:

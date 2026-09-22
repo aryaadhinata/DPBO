@@ -17,5 +17,6 @@ public class ArrayPoint{
             arrPoint[i] = new Point(x, y);
             System.out.println("x : " + arrPoint[i].x + " y: " + arrPoint[i].y);
         }
+        scan.close();
     }
 }
