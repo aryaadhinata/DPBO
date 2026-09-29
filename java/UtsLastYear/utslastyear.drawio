@@ -1,0 +1,428 @@
+<mxfile host="65bd71144e">
+    <diagram id="desain-relasi-kelas" name="Page-1">
+        <mxGraphModel dx="83505" dy="51756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="1500" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="usaha" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; Usaha" vertex="1">
+                    <mxGeometry height="210" width="350" x="30" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-kode" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- kode: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-nama" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-kota" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- kota: Kota" vertex="1">
+                    <mxGeometry height="30" width="350" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-luas" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- luas: double" vertex="1">
+                    <mxGeometry height="30" width="350" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-accessors" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut umum" vertex="1">
+                    <mxGeometry height="30" width="350" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="usaha-desc" parent="usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-usaha" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt; PemilikUsaha" vertex="1">
+                    <mxGeometry height="180" width="350" x="430" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-ktp" parent="pemilik-usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- noKTP: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-nama" parent="pemilik-usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-alamat" parent="pemilik-usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- alamat: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-accessors" parent="pemilik-usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut umum" vertex="1">
+                    <mxGeometry height="30" width="350" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-desc" parent="pemilik-usaha" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="interface-display" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; DapatDitampilkan" vertex="1">
+                    <mxGeometry height="60" width="350" x="830" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="interface-method" parent="interface-display" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="kota" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Kota" vertex="1">
+                    <mxGeometry height="120" width="330" x="1250" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="kota-nama" parent="kota" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="330" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="kota-provinsi" parent="kota" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- provinsi: String" vertex="1">
+                    <mxGeometry height="30" width="330" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="kota-accessors" parent="kota" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut" vertex="1">
+                    <mxGeometry height="30" width="330" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PerikananKomersil" vertex="1">
+                    <mxGeometry height="180" width="470" x="25" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan-ikan" parent="perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarIkan: List&amp;lt;Ikan&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="470" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan-karyawan" parent="perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- jumlahKaryawan: int" vertex="1">
+                    <mxGeometry height="30" width="470" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan-pemilik" parent="perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- pemilik: PemilikPerikananKomersil" vertex="1">
+                    <mxGeometry height="30" width="470" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan-accessors" parent="perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut khusus" vertex="1">
+                    <mxGeometry height="30" width="470" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="perikanan-add" parent="perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ addIkan(ikan: Ikan): void" vertex="1">
+                    <mxGeometry height="30" width="470" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="RumahSwasembadaPangan" vertex="1">
+                    <mxGeometry height="240" width="530" x="555" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-pemilik-nama" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- namaPemilik: String" vertex="1">
+                    <mxGeometry height="30" width="530" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-ternak" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarTernak: List&amp;lt;TernakBahanPangan&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="530" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-ikan" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarIkan: List&amp;lt;Ikan&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="530" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-sayur" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarSayurRempah: List&amp;lt;SayurRempah&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="530" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-pemilik" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- pemilik: PemilikRumahSwasembada" vertex="1">
+                    <mxGeometry height="30" width="530" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-accessors" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut khusus" vertex="1">
+                    <mxGeometry height="30" width="530" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="rumah-add" parent="rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ addIkan/addTernak/addSayurRempah(...): void" vertex="1">
+                    <mxGeometry height="30" width="530" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PertenakanKomersil" vertex="1">
+                    <mxGeometry height="180" width="470" x="1145" y="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan-ternak" parent="peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarTernak: List&amp;lt;TernakBahanPangan&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="470" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan-karyawan" parent="peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- jumlahKaryawan: int" vertex="1">
+                    <mxGeometry height="30" width="470" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan-pemilik" parent="peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- pemilik: PemilikPertenakanKomersil" vertex="1">
+                    <mxGeometry height="30" width="470" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan-accessors" parent="peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut khusus" vertex="1">
+                    <mxGeometry height="30" width="470" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="peternakan-add" parent="peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ addTernak(ternak: TernakBahanPangan): void" vertex="1">
+                    <mxGeometry height="30" width="470" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-perikanan" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PemilikPerikananKomersil" vertex="1">
+                    <mxGeometry height="120" width="470" x="25" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-perikanan-daftar" parent="pemilik-perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarPerikananKomersil: List&amp;lt;PerikananKomersil&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="470" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-perikanan-accessors" parent="pemilik-perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter daftar usaha" vertex="1">
+                    <mxGeometry height="30" width="470" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-perikanan-constructor" parent="pemilik-perikanan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ konstruktor(noKTP, nama, alamat, daftar)" vertex="1">
+                    <mxGeometry height="30" width="470" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-rumah" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PemilikRumahSwasembada" vertex="1">
+                    <mxGeometry height="120" width="530" x="555" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-rumah-daftar" parent="pemilik-rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarRumahSwasembada: List&amp;lt;RumahSwasembadaPangan&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="530" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-rumah-accessors" parent="pemilik-rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter daftar rumah" vertex="1">
+                    <mxGeometry height="30" width="530" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-rumah-constructor" parent="pemilik-rumah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ konstruktor(noKTP, nama, alamat, daftar)" vertex="1">
+                    <mxGeometry height="30" width="530" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-peternakan" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="PemilikPertenakanKomersil" vertex="1">
+                    <mxGeometry height="120" width="470" x="1145" y="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-peternakan-daftar" parent="pemilik-peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- daftarPertenakanKomersil: List&amp;lt;PertenakanKomersil&amp;gt;" vertex="1">
+                    <mxGeometry height="30" width="470" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-peternakan-accessors" parent="pemilik-peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter daftar usaha" vertex="1">
+                    <mxGeometry height="30" width="470" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="pemilik-peternakan-constructor" parent="pemilik-peternakan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ konstruktor(noKTP, nama, alamat, daftar)" vertex="1">
+                    <mxGeometry height="30" width="470" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Ikan" vertex="1">
+                    <mxGeometry height="240" width="350" x="25" y="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-kode" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- kode: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-nama" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-jenis" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- jenis: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-berat" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- beratKonsumsi: double" vertex="1">
+                    <mxGeometry height="30" width="350" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-lama" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- lamaPemeliharaan: int" vertex="1">
+                    <mxGeometry height="30" width="350" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-accessors" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut" vertex="1">
+                    <mxGeometry height="30" width="350" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="ikan-desc" parent="ikan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TernakBahanPangan" vertex="1">
+                    <mxGeometry height="210" width="350" x="425" y="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-kode" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- kode: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-nama" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-berat" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- beratKonsumsi: double" vertex="1">
+                    <mxGeometry height="30" width="350" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-lama" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- lamaPemeliharaan: int" vertex="1">
+                    <mxGeometry height="30" width="350" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-accessors" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut" vertex="1">
+                    <mxGeometry height="30" width="350" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="ternak-desc" parent="ternak" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-rempah" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="SayurRempah" vertex="1">
+                    <mxGeometry height="180" width="350" x="825" y="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-kode" parent="sayur-rempah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- kode: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-nama" parent="sayur-rempah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- nama: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-jenis" parent="sayur-rempah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- jenis: String" vertex="1">
+                    <mxGeometry height="30" width="350" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-accessors" parent="sayur-rempah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getter/setter atribut" vertex="1">
+                    <mxGeometry height="30" width="350" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="sayur-desc" parent="sayur-rempah" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ getDeskripsi(): String" vertex="1">
+                    <mxGeometry height="30" width="350" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="main" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Main" vertex="1">
+                    <mxGeometry height="150" width="380" x="1210" y="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="main-data" parent="main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="- dataUtama: Usaha[]" vertex="1">
+                    <mxGeometry height="30" width="380" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="main-method" parent="main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ main(args: String[]): void" vertex="1">
+                    <mxGeometry height="30" width="380" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="main-search" parent="main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ cariUsaha(kode: String): Usaha" vertex="1">
+                    <mxGeometry height="30" width="380" y="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="main-display" parent="main" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="+ tampilkanDetail(usaha: Usaha): void" vertex="1">
+                    <mxGeometry height="30" width="380" y="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="legenda" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacing=6;" value="Keterangan relasi: segitiga kosong = inheritance/implementasi interface; wajik kosong = agregasi Kota; wajik terisi = komposisi komoditas; garis biasa = asosiasi pemilik dengan usaha. Pencarian Main menggunakan kode unik (contoh: PK001, PT001, RS001) dan menampilkan usaha beserta kota, pemilik, serta seluruh komoditas terkait. Inner class tidak digunakan karena komoditas dipakai oleh beberapa jenis usaha." vertex="1">
+                    <mxGeometry height="90" width="1565" x="25" y="1330" as="geometry"/>
+                </mxCell>
+                <mxCell id="inherit-perikanan" edge="1" parent="1" source="perikanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="290"/>
+                            <mxPoint x="205" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="inherit-rumah" edge="1" parent="1" source="rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.9285714285714286;entryY=1;endArrow=block;endFill=0;" target="usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="820" y="290"/>
+                            <mxPoint x="355" y="290"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="inherit-peternakan" edge="1" parent="1" source="peternakan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=1;entryY=0.8;endArrow=block;endFill=0;startSize=16;endSize=16;" target="usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1380" y="290"/>
+                            <mxPoint x="400" y="290"/>
+                            <mxPoint x="400" y="208"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="inherit-pemilik-perikanan" edge="1" parent="1" source="pemilik-perikanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="pemilik-usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="260" y="670"/>
+                            <mxPoint x="510" y="670"/>
+                            <mxPoint x="510" y="260"/>
+                            <mxPoint x="605" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="inherit-pemilik-rumah" edge="1" parent="1" source="pemilik-rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=1;entryY=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="pemilik-usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="820" y="680"/>
+                            <mxPoint x="1100" y="680"/>
+                            <mxPoint x="1100" y="260"/>
+                            <mxPoint x="780" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="inherit-pemilik-peternakan" edge="1" parent="1" source="pemilik-peternakan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=1;entryY=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="pemilik-usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1380" y="670"/>
+                            <mxPoint x="1625" y="670"/>
+                            <mxPoint x="1625" y="260"/>
+                            <mxPoint x="780" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="implements-usaha" edge="1" parent="1" source="usaha" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.9285714285714286;exitY=1;entryX=0.4857142857142857;entryY=1;dashed=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="interface-display">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="355" y="280"/>
+                            <mxPoint x="1000" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="implements-pemilik" edge="1" parent="1" source="pemilik-usaha" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;dashed=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="interface-display">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="805" y="130"/>
+                            <mxPoint x="805" y="70"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="implements-kota" edge="1" parent="1" source="kota" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;entryX=1;entryY=0.5;dashed=1;endArrow=block;endFill=0;" target="interface-display"/>
+                <mxCell id="implements-ikan" edge="1" parent="1" source="ikan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.4857142857142857;entryY=1;dashed=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="interface-display">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="200" y="1250"/>
+                            <mxPoint x="1200" y="1250"/>
+                            <mxPoint x="1200" y="840"/>
+                            <mxPoint x="1125" y="840"/>
+                            <mxPoint x="1125" y="250"/>
+                            <mxPoint x="1000" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="implements-ternak" edge="1" parent="1" source="ternak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=0.6514285714285715;entryY=1;dashed=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="interface-display">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="800" y="1085"/>
+                            <mxPoint x="800" y="930"/>
+                            <mxPoint x="1100" y="930"/>
+                            <mxPoint x="1100" y="240"/>
+                            <mxPoint x="1058" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="implements-sayur" edge="1" parent="1" source="sayur-rempah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.8514285714285714;entryY=1;dashed=1;endArrow=block;endFill=0;startSize=16;endSize=16;" target="interface-display">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1000" y="950"/>
+                            <mxPoint x="1125" y="950"/>
+                            <mxPoint x="1125" y="240"/>
+                            <mxPoint x="1128" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="aggregation-city" edge="1" parent="1" source="usaha" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.857143;entryX=0;entryY=0.5;endArrow=none;startArrow=diamondThin;startFill=0;startSize=16;endSize=16;" target="kota">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="380" y="260"/>
+                            <mxPoint x="1200" y="260"/>
+                            <mxPoint x="1200" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="composition-fish-perikanan" edge="1" parent="1" source="perikanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.833333;entryX=0.5;entryY=0;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;endSize=16;" target="ikan">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="480"/>
+                            <mxPoint x="520" y="950"/>
+                            <mxPoint x="200" y="950"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="composition-fish-rumah" edge="1" parent="1" source="rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;entryX=0.5;entryY=0;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;endSize=16;" target="ikan">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="510" y="450"/>
+                            <mxPoint x="510" y="930"/>
+                            <mxPoint x="200" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="composition-ternak-rumah" edge="1" parent="1" source="rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.875;entryX=0.5;entryY=0;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;endSize=16;" target="ternak">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="540"/>
+                            <mxPoint x="520" y="930"/>
+                            <mxPoint x="600" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="composition-sayur-rumah" edge="1" parent="1" source="rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.916667;entryX=0.5;entryY=0;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;endSize=16;" target="sayur-rempah">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1100" y="550"/>
+                            <mxPoint x="1100" y="930"/>
+                            <mxPoint x="1000" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="composition-ternak-peternakan" edge="1" parent="1" source="peternakan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=none;startArrow=diamondThin;startFill=1;startSize=16;endSize=16;" target="ternak">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1380" y="600"/>
+                            <mxPoint x="1125" y="600"/>
+                            <mxPoint x="1125" y="930"/>
+                            <mxPoint x="600" y="930"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="association-perikanan" edge="1" parent="1" source="pemilik-perikanan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;entryX=1;entryY=0.83;endArrow=none;startArrow=none;startSize=16;endSize=16;" target="perikanan">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="520" y="760"/>
+                            <mxPoint x="520" y="530"/>
+                            <mxPoint x="495" y="530"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="association-rumah" edge="1" parent="1" source="pemilik-rumah" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;startArrow=none;" target="rumah"/>
+                <mxCell id="association-peternakan" edge="1" parent="1" source="pemilik-peternakan" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;endArrow=none;startArrow=none;" target="peternakan"/>
+                <mxCell id="dependency-main" edge="1" parent="1" source="main" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5476190476190477;dashed=1;endArrow=open;endFill=0;startSize=16;endSize=16;" target="usaha">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1400" y="1170"/>
+                            <mxPoint x="800" y="1170"/>
+                            <mxPoint x="800" y="950"/>
+                            <mxPoint x="510" y="950"/>
+                            <mxPoint x="510" y="280"/>
+                            <mxPoint x="400" y="280"/>
+                            <mxPoint x="400" y="155"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
